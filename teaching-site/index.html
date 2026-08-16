@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Data Science ทีละก้าว | 20 ชั่วโมง</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">ข้ามไปยังเนื้อหาหลัก</a>
+    <header class="topbar">
+      <a class="brand" href="#overview" aria-label="Data Science ทีละก้าว">
+        <span class="brand-mark">ds</span>
+        <span>Data Science <b>ทีละก้าว</b></span>
+      </a>
+      <div class="topbar-meta"><span class="status-dot"></span> แผนการเรียน 20 ชั่วโมง</div>
+    </header>
+
+    <div class="layout">
+      <aside class="sidebar" aria-label="สารบัญบทเรียน">
+        <p class="eyebrow">LEARNING PATH</p>
+        <nav id="week-nav"></nav>
+        <div class="sidebar-note">
+          <span>หลักคิดของคอร์ส</span>
+          <p>เข้าใจ “ทำไม” ก่อน “พิมพ์โค้ด” และอ่าน Error ให้เป็นก่อนแก้</p>
+        </div>
+      </aside>
+
+      <main id="main">
+        <section class="hero" id="overview">
+          <div class="hero-copy">
+            <p class="eyebrow teal">DATA SCIENCE FOR BEGINNERS</p>
+            <h1>เปลี่ยนข้อมูลดิบ<br />เป็นคำตอบที่อธิบายได้</h1>
+            <p class="lede">คอร์ส 10 สัปดาห์สำหรับเริ่มต้น Data Science ด้วย Python — เรียนแบบเห็นปัญหาจริง ลงมือทีละบรรทัด และใช้ Error เป็นเบาะแส</p>
+            <div class="hero-actions">
+              <a class="button primary" href="#lab">เริ่มดูบทเรียนทดลอง <span>↓</span></a>
+              <a class="button quiet" href="#roadmap">ดูแผน 10 สัปดาห์</a>
+            </div>
+          </div>
+          <div class="hero-board" aria-label="ภาพสรุปเส้นทางการเรียน">
+            <div class="board-title">เส้นทางข้อมูล</div>
+            <div class="data-flow">
+              <div><span class="flow-icon file">{ }</span><b>ข้อมูลดิบ</b><small>CSV</small></div>
+              <span class="flow-arrow">→</span>
+              <div><span class="flow-icon clean">✦</span><b>ข้อมูลพร้อมใช้</b><small>Clean</small></div>
+              <span class="flow-arrow">→</span>
+              <div><span class="flow-icon chart">⌁</span><b>คำตอบ</b><small>Insight</small></div>
+            </div>
+            <div class="board-caption">ทุกสัปดาห์จะต่อยอดจากข้อมูลชุดเดิม<br />จึงเห็นภาพรวม ไม่ใช่จำคำสั่งแยกส่วน</div>
+          </div>
+        </section>
+
+        <section class="principles" aria-label="รูปแบบการเรียน">
+          <article><span class="number">01</span><h2>เห็นปัญหาก่อน</h2><p>เริ่มจากคำถามจริง เช่น “ข้อมูลนี้เชื่อถือได้ไหม?” ก่อนเลือกคำสั่ง</p></article>
+          <article><span class="number">02</span><h2>โค้ดทีละบรรทัด</h2><p>กดดูทีละขั้น พร้อมผลที่เกิดขึ้นจริงและเหตุผลของแต่ละบรรทัด</p></article>
+          <article><span class="number">03</span><h2>Error คือเบาะแส</h2><p>ฝึกแยกชื่อ Error, จุดที่พัง และวิธีตรวจสอบ ไม่เดาสุ่ม</p></article>
+        </section>
+
+        <section class="toolkit" aria-labelledby="toolkit-title">
+          <div class="toolkit-heading">
+            <p class="eyebrow teal">THE SMALL TOOLKIT</p>
+            <h2 id="toolkit-title">ใช้เครื่องมือเท่าที่จำเป็น</h2>
+            <p>เริ่มจากชุดเล็ก ๆ ที่เชื่อมกันได้ดี ก่อนเพิ่มเครื่องมือใหม่</p>
+          </div>
+          <div class="tool-list">
+            <article><b>NumPy</b><span>คำนวณตัวเลขและอาร์เรย์</span></article>
+            <article><b>Pandas</b><span>ทำงานกับตารางข้อมูล</span></article>
+            <article><b>Matplotlib</b><span>สร้างกราฟพื้นฐาน</span></article>
+            <article><b>scikit-learn</b><span>สร้าง ML แบบเริ่มต้น</span></article>
+            <article class="optional"><b>Seaborn <small>เสริม</small></b><span>ช่วยให้กราฟสถิติดูง่ายขึ้น</span></article>
+          </div>
+        </section>
+
+        <section class="section" id="roadmap">
+          <div class="section-heading">
+            <div><p class="eyebrow teal">10 WEEKS · 2 HOURS / WEEK</p><h2>แผนการเรียน</h2></div>
+            <p>จากข้อมูลที่ยังไม่พร้อมใช้ ไปจนถึงโมเดลที่ช่วยคาดการณ์อย่างมีเหตุผล</p>
+          </div>
+          <div class="week-grid" id="week-cards"></div>
+        </section>
+
+        <section class="section chapter-reader" id="chapter-reader" hidden aria-live="polite">
+          <div class="reader-topline"><span>DATA SCIENCE BOOK</span><button class="reader-close" id="reader-close" type="button">ปิดบทเรียน ×</button></div>
+          <div id="reader-content"></div>
+        </section>
+
+        <section class="section lesson-section" id="lessons">
+          <div class="section-heading compact">
+            <div><p class="eyebrow teal">TEACH THE WHY, NOT ONLY THE HOW</p><h2>บทเรียนรายสัปดาห์</h2></div>
+            <p>เปิดทีละ Week เพื่อเรียนจากปัญหาจริง แล้วเห็นทั้งหน้าที่ เหตุผล และผลกระทบหากข้ามขั้นตอนนั้นไป</p>
+          </div>
+          <div class="lesson-list" id="lesson-list"></div>
+        </section>
+
+        <section class="section challenge-section" id="challenges">
+          <div class="section-heading compact">
+            <div><p class="eyebrow coral">PRACTICE EVERY WEEK</p><h2>Challenge ประจำสัปดาห์</h2></div>
+            <p>ทุกข้อมีโจทย์เล็กพอจะทำใน 20–30 นาที มี bug หรือจุดตรวจให้ฝึกคิด และเฉลยที่เปิดดูเมื่อทดลองเองแล้ว</p>
+          </div>
+          <div class="challenge-rules">
+            <b>ลำดับที่แนะนำ</b><span>1. อ่านโจทย์</span><i>→</i><span>2. รันโค้ด</span><i>→</i><span>3. อ่าน Error / ตรวจผล</span><i>→</i><span>4. ค่อยดูใบ้</span>
+          </div>
+          <div class="challenge-grid" id="challenge-cards"></div>
+        </section>
+
+        <section class="section lab-section" id="lab">
+          <div class="section-heading compact">
+            <div><p class="eyebrow teal">TRY IT IN SCENES</p><h2>ห้องทดลอง: โค้ดไม่มาเป็นก้อน</h2></div>
+            <p>คลิกเพื่อดูว่าโค้ดแต่ละบรรทัดเพิ่มอะไร และตอน loop ทำงาน ตัวแปรเปลี่ยนอย่างไร</p>
+          </div>
+
+          <div class="lab-tabs" role="tablist" aria-label="รูปแบบการทดลอง">
+            <button class="tab active" role="tab" aria-selected="true" data-lab="steps">1. โค้ดทีละขั้น</button>
+            <button class="tab" role="tab" aria-selected="false" data-lab="loop">2. เห็นภาพ For loop</button>
+          </div>
+
+          <div class="lab-panel active" id="steps-panel" role="tabpanel">
+            <div class="lab-copy">
+              <p class="eyebrow">WEEK 01 · OPEN THE DATA</p>
+              <h3>ก่อนวิเคราะห์ ต้องรู้ก่อนว่าในไฟล์มีอะไร</h3>
+              <p>เราใช้ไฟล์ <code>footballers.csv</code> เพื่อหาคำตอบว่า “นักเตะคนไหนมีค่าตัวสูง?” แต่ยังไม่รีบคำนวณ เพราะต้องตรวจหน้าตาข้อมูลก่อน</p>
+              <div class="step-explanation" id="step-explanation" aria-live="polite"></div>
+              <button class="button primary next-button" id="next-step">แสดงบรรทัดแรก <span>→</span></button>
+              <button class="text-button" id="reset-steps">เริ่มใหม่</button>
+            </div>
+            <div class="code-card" aria-label="ตัวอย่างโค้ดแบบทีละขั้น">
+              <div class="code-top"><span><i></i><i></i><i></i></span><b>week01_open_data.ipynb</b><small id="step-count">0 / 4 steps</small></div>
+              <pre id="step-code"><code><span class="code-muted"># กดปุ่มด้านซ้าย เพื่อเริ่มดูโค้ดทีละบรรทัด</span></code></pre>
+              <div class="output" id="step-output"><span class="output-label">OUTPUT</span><p>ผลลัพธ์จะปรากฏที่นี่</p></div>
+            </div>
+          </div>
+
+          <div class="lab-panel" id="loop-panel" role="tabpanel" hidden>
+            <div class="lab-copy">
+              <p class="eyebrow">WEEK 01 · THINK IN LOOP</p>
+              <h3>For loop คือการทำงานซ้ำ “ทีละชิ้น”</h3>
+              <p>ลองดูโค้ดที่เก็บชื่อนักเตะอายุต่ำกว่า 25 ปี จุดสำคัญคือ <code>player</code> จะถือข้อมูลเพียง 1 คนในแต่ละรอบ ไม่ได้ถือทั้งรายการพร้อมกัน</p>
+              <div class="scene-explanation" id="scene-explanation" aria-live="polite"></div>
+              <button class="button primary next-button" id="next-scene">เริ่มฉากที่ 1 <span>→</span></button>
+              <button class="text-button" id="reset-scenes">เริ่มใหม่</button>
+            </div>
+            <div class="loop-card">
+              <div class="code-top"><span><i></i><i></i><i></i></span><b>for_loop_scene.py</b><small id="scene-count">0 / 4 scenes</small></div>
+              <pre class="loop-code"><code>young_players = []
+for player in players:
+    if player["age"] &lt; 25:
+        young_players.append(player["name"])</code></pre>
+              <div class="scene-track" id="scene-track" aria-label="สถานะการทำงานของ For loop">
+                <div class="scene-empty">กด “เริ่มฉากที่ 1” เพื่อดูการทำงานทีละรอบ</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section error-section" id="error-lab">
+          <div class="section-heading compact">
+            <div><p class="eyebrow coral">DEBUGGING PRACTICE</p><h2>อ่าน Error ให้เป็น</h2></div>
+            <p>Error ไม่ได้บอกว่าเรา “เขียนไม่เก่ง” — มันบอกว่า Python ไปต่อไม่ได้ตรงไหน</p>
+          </div>
+          <div class="error-layout">
+            <article class="error-challenge">
+              <div class="challenge-label"><span>โจทย์ฝึกคิด</span><b>มี Bug ซ่อนอยู่ 1 จุด</b></div>
+              <h3>หาค่าเฉลี่ยของคอลัมน์ <code>overall</code></h3>
+              <pre><code>average = df["overal"].mean()
+print(average)</code></pre>
+              <button class="button coral" id="reveal-error">รันโค้ดและอ่าน Error</button>
+              <div class="fake-traceback" id="traceback" hidden>
+                <span>KeyError: 'overal'</span>
+                <p>Python หา “คอลัมน์ชื่อ overal” ไม่เจอในตาราง</p>
+              </div>
+            </article>
+            <article class="error-guide" id="error-guide" aria-live="polite">
+              <p class="eyebrow">วิธีอ่านทีละส่วน</p>
+              <div class="guide-placeholder">กดรันโค้ด แล้วเราจะค่อย ๆ แยกความหมายของ Error ด้วยกัน</div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section project-section" id="project">
+          <div class="project-card">
+            <div>
+              <p class="eyebrow light">WEEK 09–10 · MINI PROJECT</p>
+              <h2>Football scout report</h2>
+              <p>เลือกคำถามหนึ่งข้อจากชุดข้อมูลนักเตะ ทำความสะอาดข้อมูล วิเคราะห์ สร้างกราฟ และสรุปสิ่งที่ค้นพบให้คนทั่วไปเข้าใจได้</p>
+            </div>
+            <ol>
+              <li><b>ถาม</b><span>ตั้งคำถามที่ตอบได้จากข้อมูล</span></li>
+              <li><b>ตรวจ</b><span>หา missing / ชนิดข้อมูลผิด</span></li>
+              <li><b>เล่า</b><span>ใช้กราฟและข้อความสรุป</span></li>
+            </ol>
+          </div>
+        </section>
+
+        <footer>Data Science ทีละก้าว · ใช้ Python, Jupyter Notebook และ VS Code</footer>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
